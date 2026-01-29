@@ -18,27 +18,27 @@ export const AboutSection = () => {
              {/* Main Image with Soft Mask/Shadow */}
              <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl shadow-black/5 rotate-1 hover:rotate-0 transition-transform duration-700 ease-out">
                 <div className="relative aspect-[4/3]">
-                   <Image src="/about.png" alt="Collaborative Ecosystem" fill className="object-cover hover:scale-105 transition-transform duration-1000" />
+                   <Image src="/about-sysdyn.png" alt="Collaborative Ecosystem" fill className="object-cover hover:scale-105 transition-transform duration-1000" />
                 </div>
              </div>
              
              {/* Floating Decorative Elements */}
              <div className="absolute -top-6 -left-6 z-20 sys-card p-4 rounded-2xl animate-float">
                 <div className="flex items-center gap-3">
-                   <span className="text-2xl">🌍</span>
+                   <div className="w-8 h-8 rounded-full bg-secondary/10 flex items-center justify-center text-primary font-bold">1</div>
                    <div>
-                      <div className="text-xs font-bold text-secondary-light uppercase">Dampak</div>
-                      <div className="text-sm font-bold text-foreground">Jangkauan Luas</div>
+                      <div className="text-xs font-bold text-secondary-light uppercase">- Structure Determines Behavior</div>
+                      <div className="text-xs font-bold text-secondary-light uppercase">- Feedback</div>
                    </div>
                 </div>
              </div>
 
              <div className="absolute -bottom-8 -right-4 z-20 sys-card p-4 rounded-2xl animate-float-delayed">
                 <div className="flex items-center gap-3">
-                   <div className="w-8 h-8 rounded-full bg-secondary/10 flex items-center justify-center text-primary font-bold">SDG</div>
+                   <div className="w-8 h-8 rounded-full bg-secondary/10 flex items-center justify-center text-primary font-bold">2</div>
                    <div>
-                      <div className="text-xs font-bold text-secondary-light uppercase">Fokus</div>
-                      <div className="text-sm font-bold text-foreground">Keberlanjutan</div>
+                      <div className="text-xs font-bold text-secondary-light uppercase">- Mental Models</div>
+                      <div className="text-xs font-bold text-secondary-light uppercase">- Boundary and Dynamic Complexity</div>
                    </div>
                 </div>
              </div>
@@ -71,8 +71,8 @@ export const AboutSection = () => {
               </div>
               
               <div className="flex-1 sys-card p-5 rounded-xl border-l-4 border-l-secondary hover:shadow-lg transition-shadow">
-                 <div className="text-3xl font-bold text-foreground mb-1">100%</div>
-                 <div className="text-xs font-bold text-secondary-light uppercase">Validasi <br/>Metodologi</div>
+                 <div className="text-3xl font-bold text-foreground mb-1">80+</div>
+                 <div className="text-xs font-bold text-secondary-light uppercase">Pelatihan <br/>& Workshop</div>
               </div>
             </div>
           </div>

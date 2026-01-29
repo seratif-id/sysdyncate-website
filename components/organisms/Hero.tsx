@@ -30,14 +30,14 @@ export const Hero = () => {
           </Typography>
 
           <Typography variant="body" className="mb-8 text-xl text-secondary max-w-lg">
-            Kami membantu organisasi memvisualisasikan, mensimulasikan, dan mengoptimalkan sistem yang kompleks untuk pengambilan keputusan berbasis data yang berkelanjutan.
+            Kami membantu memvisualisasikan, mensimulasikan, dan mengoptimalkan sistem yang kompleks berdasarkan fenomena yang nyata untuk pengambilan keputusan berbasis data yang berkelanjutan.
           </Typography>
 
           <div className="flex flex-col sm:flex-row gap-4">
             <Button onClick={() => scrollTo("location")} size="lg" className="bg-brand-accent text-white hover:bg-brand-accent/90 shadow-lg shadow-brand-accent/20 border-none">
               Mulai Konsultasi
             </Button>
-            <Button onClick={() => scrollTo("portfolio")} variant="outline" size="lg" className="border-secondary/20 text-foreground hover:bg-surface hover:border-brand-accent/50">
+            <Button onClick={() => scrollTo("portfolio")} variant="outline" size="lg" className="border-secondary/20 text-foreground  hover:bg-brand-accent hover:text-white hover:border-brand-accent/50">
               Lihat Riset Kami
             </Button>
           </div>

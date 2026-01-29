@@ -13,12 +13,12 @@ export const Footer = () => {
               <Logo />
             </div>
             <Typography variant="body" className="max-w-sm mb-6 !text-foreground/80">
-              Memberdayakan bisnis melalui inovasi digital dan praktik berkelanjutan. Membangun masa depan, satu sistem pada satu waktu.
+              Solusi pemodelan sistem dinamis terdepan untuk mendukung penelitian mendalam dan perumusan kebijakan yang tepat sasaran.
             </Typography>
           </div>
           
           <div>
-            <Typography variant="h3" className="mb-6 !text-lg !text-foreground font-bold">Perusahaan</Typography>
+            <Typography variant="h3" className="mb-6 !text-lg !text-foreground font-bold">Komunitas</Typography>
             <ul className="space-y-4">
               <li><a href="#about" className="text-secondary hover:text-primary transition-colors">Tentang Kami</a></li>
               <li><a href="#services" className="text-secondary hover:text-primary transition-colors">Layanan</a></li>
@@ -36,7 +36,7 @@ export const Footer = () => {
         </div>
         
         <div className="mt-12 pt-8 border-t border-secondary/10 text-center text-secondary text-sm">
-          &copy; {new Date().getFullYear()} Sysdyncate. Hak Cipta Dilindungi.
+          &copy; {new Date('2020').getFullYear()} Sysdyncate. Hak Cipta Dilindungi.
         </div>
       </Container>
     </footer>

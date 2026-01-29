@@ -8,7 +8,7 @@ export const LocationSection = () => {
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <Typography variant="caption" className="mb-2 text-primary font-bold">Markas Kami</Typography>
+            <Typography variant="caption" className="mb-2 text-primary font-bold">Lokasi Kami</Typography>
             <Typography variant="h2" className="mb-6 text-primary-dark">Kunjungi Kami</Typography>
             
             <div className="space-y-6 text-foreground/70">
@@ -33,7 +33,7 @@ export const LocationSection = () => {
                 </div>
                 <div>
                    <h4 className="font-bold text-foreground">Email Kami</h4>
-                   <p>anasera.digital@gmail.com</p>
+                   <p>sydyncate@gmail.com</p>
                 </div>
               </div>
             </div>

@@ -19,8 +19,12 @@ interface NavItemConfig {
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = React.useState(false);
+  const [isHeroPassed, setIsHeroPassed] = React.useState(false);
+  const [isSideNavVisible, setIsSideNavVisible] = React.useState(false);
+  const [isHoveringSideNav, setIsHoveringSideNav] = React.useState(false);
   const [activeSection, setActiveSection] = React.useState('');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+  const timeoutRef = React.useRef<NodeJS.Timeout | null>(null);
 
   // Configuration for Navigation Items
   const navItems: NavItemConfig[] = React.useMemo(() => [
@@ -78,7 +82,9 @@ export const Navbar = () => {
   React.useEffect(() => {
     const handleScroll = () => {
       const scrollThreshold = window.innerHeight * 0.2;
+      const heroThreshold = window.innerHeight * 0.8;
       setIsScrolled(window.scrollY > scrollThreshold);
+      setIsHeroPassed(window.scrollY > heroThreshold);
 
       // Determine active section
       for (const item of navItems) {
@@ -101,6 +107,42 @@ export const Navbar = () => {
   React.useEffect(() => {
     document.body.style.overflow = isMobileMenuOpen ? 'hidden' : 'unset';
   }, [isMobileMenuOpen]);
+
+  // Inactivity logic for Side Navigation
+  React.useEffect(() => {
+    if (!isHeroPassed) {
+      setIsSideNavVisible(false);
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+      return;
+    }
+
+    const resetTimer = () => {
+      setIsSideNavVisible(true);
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+      
+      if (!isHoveringSideNav) {
+        timeoutRef.current = setTimeout(() => {
+          setIsSideNavVisible(false);
+        }, 1000); // Hide after 1 seconds of inactivity
+      }
+    };
+
+    // Initial show when hero is passed
+    resetTimer();
+
+    window.addEventListener('mousemove', resetTimer);
+    window.addEventListener('mousedown', resetTimer);
+    window.addEventListener('scroll', resetTimer);
+    window.addEventListener('keydown', resetTimer);
+
+    return () => {
+      window.removeEventListener('mousemove', resetTimer);
+      window.removeEventListener('mousedown', resetTimer);
+      window.removeEventListener('scroll', resetTimer);
+      window.removeEventListener('keydown', resetTimer);
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
+  }, [isHeroPassed, isHoveringSideNav]);
 
   return (
     <>
@@ -167,8 +209,10 @@ export const Navbar = () => {
 
       {/* Side Navigation (Scrolled State) */}
       <div 
+        onMouseEnter={() => setIsHoveringSideNav(true)}
+        onMouseLeave={() => setIsHoveringSideNav(false)}
         className={`fixed right-8 top-1/2 -translate-y-1/2 z-50 hidden md:flex flex-col items-center gap-6 transition-all duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] ${
-          isScrolled ? 'translate-x-0 opacity-100' : 'translate-x-20 opacity-0 pointer-events-none'
+          isHeroPassed && isSideNavVisible ? 'translate-x-0 opacity-100' : 'translate-x-20 opacity-0 pointer-events-none'
         }`}
       >
         {/* Back to Top */}
@@ -201,7 +245,7 @@ export const Navbar = () => {
       {/* Persistent Logo */}
       <div 
         className={`w-full fixed pt-6 top-0 pl-6 left-0 z-50 transition-all duration-500 ${
-            isScrolled ? 'opacity-100 translate-y-0  glass' : 'opacity-0 -translate-y-4 pointer-events-none'
+            isHeroPassed ? 'opacity-100 translate-y-0  glass' : 'opacity-0 -translate-y-4 pointer-events-none'
         }`}
       >
           <div className="scale-75 origin-top-left cursor-pointer drop-shadow-md" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
