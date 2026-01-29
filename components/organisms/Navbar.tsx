@@ -45,21 +45,29 @@ export const Navbar = () => {
       hoverColorClass: 'glass-pill text-secondary hover:text-primary hover:bg-white'
     },
     { 
-      label: 'Portofolio', 
-      href: '#portfolio', 
-      id: 'portfolio', 
-      icon: Briefcase,
-      activeColorClass: 'bg-primary text-white shadow-lg scale-105',
-      hoverColorClass: 'glass-pill text-secondary hover:text-primary hover:bg-white'
-    },
-    { 
-      label: 'Klien', 
-      href: '#clients', 
-      id: 'clients', 
+      label: 'Tim', 
+      href: '#team', 
+      id: 'team', 
       icon: Users,
       activeColorClass: 'bg-primary text-white shadow-lg scale-105',
       hoverColorClass: 'glass-pill text-secondary hover:text-primary hover:bg-white'
     },
+    // { 
+    //   label: 'Portofolio', 
+    //   href: '#portfolio', 
+    //   id: 'portfolio', 
+    //   icon: Briefcase,
+    //   activeColorClass: 'bg-primary text-white shadow-lg scale-105',
+    //   hoverColorClass: 'glass-pill text-secondary hover:text-primary hover:bg-white'
+    // },
+    // { 
+    //   label: 'Klien', 
+    //   href: '#clients', 
+    //   id: 'clients', 
+    //   icon: Users,
+    //   activeColorClass: 'bg-primary text-white shadow-lg scale-105',
+    //   hoverColorClass: 'glass-pill text-secondary hover:text-primary hover:bg-white'
+    // },
     { 
       label: 'Kontak', 
       href: '#location', 

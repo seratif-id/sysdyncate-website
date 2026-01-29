@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/organisms/Navbar";
 import { Hero } from "@/components/organisms/Hero";
 import { ServicesSection } from "@/components/organisms/ServicesSection";
+import { TeamSection } from "@/components/organisms/TeamSection";
 import { SdgSection } from "@/components/organisms/SdgSection";
 import { Footer } from "@/components/organisms/Footer";
 import { AboutSection } from "@/components/organisms/AboutSection";
@@ -17,12 +18,13 @@ export default function Home() {
       <div id="services">
         <ServicesSection />
       </div>
-      <div id="portfolio">
+      <TeamSection />
+      {/* <div id="portfolio">
         <PortfolioSection />
       </div>
       <div id="clients">
         <ClientsSection />
-      </div>
+      </div> */}
       {/* <div id="sdg">
         <SdgSection />
       </div> */}

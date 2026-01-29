@@ -42,7 +42,7 @@ export const ServicesSection = () => {
             Keahlian Kami
           </Typography>
           <Typography variant="body" className="max-w-2xl mx-auto">
-            Solusi pemodelan sistem dinamis terdepan untuk mendukung penelitian mendalam dan perumusan kebijakan yang tepat sasaran.
+            Solusi pemodelan dinamika sistem terdepan untuk mendukung penelitian mendalam dan perumusan kebijakan yang tepat sasaran.
           </Typography>
         </div>
 
