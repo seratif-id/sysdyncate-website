@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SERATIVE.ID",
+  title: "Sysdyncate",
   description: "Website Development and Mobile App Development",
 };
 

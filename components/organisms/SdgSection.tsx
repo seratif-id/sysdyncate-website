@@ -21,7 +21,7 @@ export const SdgSection = () => {
             Committed to Impact
           </Typography>
           <Typography variant="body" className="max-w-2xl mx-auto">
-            Seratif takes the Sustainable Development Goals seriously. We build technology that empowers people and protects our planet.
+            Sysdyncate takes the Sustainable Development Goals seriously. We build technology that empowers people and protects our planet.
           </Typography>
         </div>
 

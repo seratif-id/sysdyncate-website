@@ -29,32 +29,32 @@ export const Navbar = () => {
       href: '#about', 
       id: 'about', 
       icon: User,
-      activeColorClass: 'bg-primary text-white shadow-[0_4px_14px_0_rgba(16,185,129,0.39)] scale-105',
-      hoverColorClass: 'glass-pill text-slate-600 hover:text-primary hover:bg-white'
+      activeColorClass: 'bg-primary text-white shadow-lg scale-105',
+      hoverColorClass: 'glass-pill text-secondary hover:text-primary hover:bg-white'
     },
     { 
       label: 'Expertise', 
       href: '#services', 
       id: 'services', 
       icon: Zap,
-      activeColorClass: 'bg-primary text-white shadow-[0_4px_14px_0_rgba(16,185,129,0.39)] scale-105',
-      hoverColorClass: 'glass-pill text-slate-600 hover:text-primary hover:bg-white'
+      activeColorClass: 'bg-primary text-white shadow-lg scale-105',
+      hoverColorClass: 'glass-pill text-secondary hover:text-primary hover:bg-white'
     },
     { 
       label: 'Work', 
       href: '#portfolio', 
       id: 'portfolio', 
       icon: Briefcase,
-      activeColorClass: 'bg-primary text-white shadow-[0_4px_14px_0_rgba(16,185,129,0.39)] scale-105',
-      hoverColorClass: 'glass-pill text-slate-600 hover:text-primary hover:bg-white'
+      activeColorClass: 'bg-primary text-white shadow-lg scale-105',
+      hoverColorClass: 'glass-pill text-secondary hover:text-primary hover:bg-white'
     },
     { 
       label: 'Clients', 
       href: '#clients', 
       id: 'clients', 
       icon: Users,
-      activeColorClass: 'bg-primary text-white shadow-[0_4px_14px_0_rgba(16,185,129,0.39)] scale-105',
-      hoverColorClass: 'glass-pill text-slate-600 hover:text-primary hover:bg-white'
+      activeColorClass: 'bg-primary text-white shadow-lg scale-105',
+      hoverColorClass: 'glass-pill text-secondary hover:text-primary hover:bg-white'
     },
     { 
       label: 'Contact', 
@@ -62,7 +62,7 @@ export const Navbar = () => {
       id: 'location', 
       icon: MapPin,
       activeColorClass: 'bg-primary text-white hover:bg-primary-light shadow-xl',
-      hoverColorClass: 'glass-pill text-slate-600 hover:text-primary hover:bg-white'
+      hoverColorClass: 'glass-pill text-secondary hover:text-primary hover:bg-white'
     },
   ], []);
 

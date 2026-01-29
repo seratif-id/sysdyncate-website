@@ -19,9 +19,9 @@ export const Hero = () => {
       <Container className="relative z-10 grid lg:grid-cols-2 gap-12 items-center">
         {/* Left Column: Content */}
         <div className="flex flex-col items-start text-left animate-fade-in-down">
-          <div className="glass-pill px-4 py-1.5 rounded-full mb-8 animate-fade-in-up">
-            <span className="text-sm font-medium text-emerald-700 tracking-wide">
-              🌱 Cultivating Digital Ecosystems
+          <div className="glass-pill px-4 py-1.5 rounded-full mb-8 animate-fade-in-up border border-secondary/20">
+            <span className="text-sm font-medium text-foreground/80 tracking-wide uppercase">
+              System Dynamics Syndicate
             </span>
           </div>
 

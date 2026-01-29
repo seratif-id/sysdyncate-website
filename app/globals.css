@@ -1,35 +1,35 @@
 @import "tailwindcss";
 
 :root {
-  /* Fresh Ecosystem Palette - Living Systems */
+  /* Sysdyncate Palette - Professional, Monochrome, Systems Thinking */
   
-  /* Base - Pure White / Very Soft Mint */
-  --background: #F8FAFC; 
-  --foreground: #0F172A; /* Slate 900 - Soft Dark */
+  /* Base - Clean White / Professional Grey */
+  --background: #FFFFFF; 
+  --foreground: #171717; /* Neutral 900 */
   
-  /* Primary - Vibrant Life (Emerald) */
-  --primary: #10B981; 
+  /* Primary - Authority (Black/Dark Charcoal) */
+  --primary: #171717; 
   --primary-foreground: #FFFFFF;
-  --primary-light: #34D399;
+  --primary-light: #404040;
+  --primary-dark: #0A0A0A;
   
-  /* Secondary - Slate/Stone (Neutral Grounding) */
-  --secondary: #64748B;
+  /* Secondary - Structure (Neutral Greys) */
+  --secondary: #525252; /* Neutral 600 */
   --secondary-foreground: #FFFFFF;
-  --secondary-light: #94A3B8;
+  --secondary-light: #A3A3A3;
 
-  /* Accent - Flow/Water (Cyan) */
-  --accent: #06B6D4;
-  --brand-accent: #06B6D4; /* Kept for compatibility */
+  /* Accent - Insight (Subtle Professional Blue/Grey) */
+  --accent: #2563EB; /* Royal Blue - used sparingly */
+  --brand-accent: #171717; /* Matches logo primary */
   
-  /* Surfaces - Glass & Air */
-  --surface: #FFFFFF;
-  --surface-hover: #F1F5F9;
+  /* Surfaces - Clean & Minimal */
+  --surface: #F9FAFB; /* Slate 50 */
+  --surface-hover: #F3F4F6; /* Slate 100 */
 
-  /* Glassmorphism Configuration */
-  --glass-bg: rgba(255, 255, 255, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.5);
-  --glass-blur: 16px;
-  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+  /* Modern Card Configuration */
+  --card-bg: rgba(255, 255, 255, 0.9);
+  --card-border: #E5E7EB;
+  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
@@ -41,6 +41,7 @@
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
   --color-primary-light: var(--primary-light);
+  --color-primary-dark: var(--primary-dark);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
   --color-brand-accent: var(--brand-accent);
@@ -60,64 +61,42 @@ body {
   line-height: 1.6;
 }
 
-/* Custom Utilities for Fresh Ecosystem */
+/* Sysdyncate Custom Utilities */
 @layer utilities {
-  .glass-card {
-    background: var(--glass-bg);
-    backdrop-filter: blur(var(--glass-blur));
-    border: 1px solid var(--glass-border);
-    box-shadow: var(--glass-shadow);
+  .sys-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    box-shadow: var(--card-shadow);
+    transition: all 0.3s ease;
   }
   
-  .glass-pill {
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  .sys-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    border-color: var(--secondary-light);
   }
 
-  /* Moving Mesh Gradient Background */
-  .mesh-bg {
-    background-color: #F0FDF4;
-    background-image: 
-      radial-gradient(at 0% 0%, hsla(147, 73%, 87%, 1) 0px, transparent 50%),
-      radial-gradient(at 50% 100%, hsla(189, 94%, 89%, 1) 0px, transparent 50%),
-      radial-gradient(at 100% 0%, hsla(168, 76%, 92%, 1) 0px, transparent 50%);
+  /* Grid/Network Background */
+  .grid-bg {
+    background-size: 40px 40px;
+    background-image: linear-gradient(to right, #f0f0f0 1px, transparent 1px),
+                      linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
   }
 
-  .text-glow-fresh {
-    text-shadow: 0 0 30px rgba(16, 185, 129, 0.3);
+  .text-gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, var(--primary), var(--secondary));
   }
 }
 
 /* Animations */
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
-
 @keyframes fade-in-up {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes pulse-soft {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.7; }
-}
-
-.animate-float {
-  animation: float 6s ease-in-out infinite;
-}
-
-.animate-float-delayed {
-  animation: float 6s ease-in-out 3s infinite;
-}
-
 .animate-fade-in-up {
-  animation: fade-in-up 0.8s ease-out forwards;
-}
-
-.animate-pulse-soft {
-  animation: pulse-soft 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }

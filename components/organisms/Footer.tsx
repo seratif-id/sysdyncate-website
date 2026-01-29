@@ -5,7 +5,7 @@ import { Typography } from '../atoms/Typography';
 
 export const Footer = () => {
   return (
-    <footer className="py-12 border-t border-emerald-100 bg-gradient-to-t from-emerald-50/50 to-white">
+    <footer className="py-12 border-t border-secondary/20 bg-background">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="col-span-1 md:col-span-2">
@@ -13,7 +13,7 @@ export const Footer = () => {
               <Logo />
             </div>
             <Typography variant="body" className="max-w-sm mb-6 !text-foreground/80">
-              Empowering businesses through digital innovation and sustainable practices. Building the future, one pixel at a time.
+              Empowering businesses through digital innovation and sustainable practices. Building the future, one system at a time.
             </Typography>
           </div>
           
@@ -36,7 +36,7 @@ export const Footer = () => {
         </div>
         
         <div className="mt-12 pt-8 border-t border-secondary/10 text-center text-secondary text-sm">
-          &copy; {new Date().getFullYear()} Serative Corp. All rights reserved.
+          &copy; {new Date().getFullYear()} Sysdyncate. All rights reserved.
         </div>
       </Container>
     </footer>
