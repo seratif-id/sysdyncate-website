@@ -27,8 +27,8 @@ export const AboutSection = () => {
                 <div className="flex items-center gap-3">
                    <span className="text-2xl">🌍</span>
                    <div>
-                      <div className="text-xs font-bold text-secondary-light uppercase">Impact</div>
-                      <div className="text-sm font-bold text-foreground">Global Reach</div>
+                      <div className="text-xs font-bold text-secondary-light uppercase">Dampak</div>
+                      <div className="text-sm font-bold text-foreground">Jangkauan Luas</div>
                    </div>
                 </div>
              </div>
@@ -37,8 +37,8 @@ export const AboutSection = () => {
                 <div className="flex items-center gap-3">
                    <div className="w-8 h-8 rounded-full bg-secondary/10 flex items-center justify-center text-primary font-bold">SDG</div>
                    <div>
-                      <div className="text-xs font-bold text-secondary-light uppercase">Focus</div>
-                      <div className="text-sm font-bold text-foreground">Sustainable Goals</div>
+                      <div className="text-xs font-bold text-secondary-light uppercase">Fokus</div>
+                      <div className="text-sm font-bold text-foreground">Keberlanjutan</div>
                    </div>
                 </div>
              </div>
@@ -48,31 +48,31 @@ export const AboutSection = () => {
           <div className="order-1 lg:order-2">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/5 border border-secondary/10 mb-6">
                <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
-               <span className="text-xs font-bold text-secondary uppercase tracking-widest">About Our Mission</span>
+               <span className="text-xs font-bold text-secondary uppercase tracking-widest">Tentang Kami</span>
             </div>
             
             <Typography variant="h2" className="mb-6 text-foreground">
-              Innovating with <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Purpose.</span>
+              Menggali Dinamika, <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Merancang Solusi.</span>
             </Typography>
             
             <Typography variant="body" className="mb-6 text-secondary text-lg">
-              We believe technology is a living extension of human potential. At Sysdyncate, we don't just write code; we cultivate digital ecosystems that grow, adapt, and sustain.
+              Sysdyncate adalah komunitas yang berdedikasi pada pengembangan dan penerapan metodologi <strong>System Dynamics</strong>. Kami membangun model simulasi yang presisi untuk mendukung penelitian akademis, tugas akhir, serta analisis kebijakan publik yang berdampak.
             </Typography>
             
             <Typography variant="body" className="mb-8 text-secondary">
-              From complex data simulations to user-centric platforms, our work is rooted in the principles of System Dynamics—connecting the dots between efficiency, sustainability, and experience.
+              Dengan pendekatan berbasis data dan pemodelan sistem yang kompleks, kami membantu peneliti dan pembuat kebijakan memahami struktur umpan balik (feedback loops) dan perilaku sistem untuk pengambilan keputusan yang lebih efektif dan berkelanjutan.
             </Typography>
             
             {/* Stats - Soft Cards */}
             <div className="flex gap-6">
               <div className="flex-1 sys-card p-5 rounded-xl border-l-4 border-l-primary hover:shadow-lg transition-shadow">
-                <div className="text-3xl font-bold text-foreground mb-1">20+</div>
-                <div className="text-xs font-bold text-secondary-light uppercase">Projects <br/>Delivered</div>
+                <div className="text-3xl font-bold text-foreground mb-1">50+</div>
+                <div className="text-xs font-bold text-secondary-light uppercase">Model <br/>Dikembangkan</div>
               </div>
               
               <div className="flex-1 sys-card p-5 rounded-xl border-l-4 border-l-secondary hover:shadow-lg transition-shadow">
                  <div className="text-3xl font-bold text-foreground mb-1">100%</div>
-                 <div className="text-xs font-bold text-secondary-light uppercase">Client <br/>Satisfaction</div>
+                 <div className="text-xs font-bold text-secondary-light uppercase">Validasi <br/>Metodologi</div>
               </div>
             </div>
           </div>

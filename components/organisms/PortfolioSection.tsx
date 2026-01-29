@@ -11,11 +11,11 @@ export const PortfolioSection = () => {
       <Container>
         <div className="flex flex-col md:flex-row justify-between items-end mb-12">
           <div>
-            <Typography variant="caption" className="mb-2 text-primary font-bold">Our Work</Typography>
-            <Typography variant="h2" className="text-primary-dark">Featured Projects</Typography>
+            <Typography variant="caption" className="mb-2 text-primary font-bold">Karya Kami</Typography>
+            <Typography variant="h2" className="text-primary-dark">Proyek Unggulan</Typography>
           </div>
           <Button variant="ghost" className="hidden md:inline-flex text-primary hover:bg-primary/5">
-            View All Projects →
+            Lihat Semua Proyek →
           </Button>
         </div>
 
@@ -40,7 +40,7 @@ export const PortfolioSection = () => {
         
         <div className="mt-8 text-center md:hidden">
             <Button variant="ghost" className="text-primary hover:bg-primary/5">
-                View All Projects →
+                Lihat Semua Proyek →
             </Button>
         </div>
       </Container>

@@ -8,8 +8,8 @@ export const LocationSection = () => {
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <Typography variant="caption" className="mb-2 text-primary font-bold">Our Headquarters</Typography>
-            <Typography variant="h2" className="mb-6 text-primary-dark">Visit Us</Typography>
+            <Typography variant="caption" className="mb-2 text-primary font-bold">Markas Kami</Typography>
+            <Typography variant="h2" className="mb-6 text-primary-dark">Kunjungi Kami</Typography>
             
             <div className="space-y-6 text-foreground/70">
               <div className="flex items-start gap-4">
@@ -20,7 +20,7 @@ export const LocationSection = () => {
                     </svg>
                 </div>
                 <div>
-                    <h4 className="font-bold text-foreground">Address</h4>
+                    <h4 className="font-bold text-foreground">Alamat</h4>
                     <p>Jl. Mekarwangi No. 21,<br/>Sariwangi, Parongpong, Bandung Barat,<br/>Jawa Barat 40559</p>
                 </div>
               </div>
@@ -32,7 +32,7 @@ export const LocationSection = () => {
                     </svg>
                 </div>
                 <div>
-                   <h4 className="font-bold text-foreground">Email Us</h4>
+                   <h4 className="font-bold text-foreground">Email Kami</h4>
                    <p>anasera.digital@gmail.com</p>
                 </div>
               </div>

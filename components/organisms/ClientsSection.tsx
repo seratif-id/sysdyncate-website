@@ -9,7 +9,7 @@ export const ClientsSection = () => {
       <Container>
         <div className="text-center mb-12">
           <Typography variant="body" className="text-foreground/50 font-medium uppercase tracking-widest">
-            Trusted by Respective Clients
+            Dipercaya oleh Klien Terkemuka
           </Typography>
         </div>
 

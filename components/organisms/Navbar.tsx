@@ -25,7 +25,7 @@ export const Navbar = () => {
   // Configuration for Navigation Items
   const navItems: NavItemConfig[] = React.useMemo(() => [
     { 
-      label: 'About', 
+      label: 'Tentang', 
       href: '#about', 
       id: 'about', 
       icon: User,
@@ -33,7 +33,7 @@ export const Navbar = () => {
       hoverColorClass: 'glass-pill text-secondary hover:text-primary hover:bg-white'
     },
     { 
-      label: 'Expertise', 
+      label: 'Keahlian', 
       href: '#services', 
       id: 'services', 
       icon: Zap,
@@ -41,7 +41,7 @@ export const Navbar = () => {
       hoverColorClass: 'glass-pill text-secondary hover:text-primary hover:bg-white'
     },
     { 
-      label: 'Work', 
+      label: 'Portofolio', 
       href: '#portfolio', 
       id: 'portfolio', 
       icon: Briefcase,
@@ -49,7 +49,7 @@ export const Navbar = () => {
       hoverColorClass: 'glass-pill text-secondary hover:text-primary hover:bg-white'
     },
     { 
-      label: 'Clients', 
+      label: 'Klien', 
       href: '#clients', 
       id: 'clients', 
       icon: Users,
@@ -57,7 +57,7 @@ export const Navbar = () => {
       hoverColorClass: 'glass-pill text-secondary hover:text-primary hover:bg-white'
     },
     { 
-      label: 'Contact', 
+      label: 'Kontak', 
       href: '#location', 
       id: 'location', 
       icon: MapPin,
@@ -126,7 +126,7 @@ export const Navbar = () => {
               className="hidden md:inline-flex shadow-lg shadow-primary/20"
               onClick={() => scrollTo('location')}
             >
-              Contact
+              Kontak
             </Button>
 
             <button 
